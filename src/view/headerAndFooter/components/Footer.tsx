@@ -6,6 +6,9 @@ import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
 import { MdEmail, MdLocationPin, MdPhone } from "react-icons/md";
 
 const Footer = () => {
+  const handleOpenSocialNetwork = (link: string) => {
+    window.open(link);
+  };
   return (
     <>
       <div className="pb-4 lg:flex items-center justify-between">
@@ -22,6 +25,11 @@ const Footer = () => {
               <Button
                 variant="twoTone"
                 size="lg"
+                onClick={() =>
+                  handleOpenSocialNetwork(
+                    "https://www.facebook.com/profile.php?id=100094129689669"
+                  )
+                }
                 className="bg-stone-800 rounded-lg hover:bg-stone-600 transition duration-300 ease-in-out"
                 icon={<FaFacebook color="rgb(132 204 22)" />}
               />
@@ -34,6 +42,11 @@ const Footer = () => {
               <Button
                 variant="twoTone"
                 size="lg"
+                onClick={() =>
+                  handleOpenSocialNetwork(
+                    "https://www.linkedin.com/company/99972064/admin/feed/posts/"
+                  )
+                }
                 className="bg-stone-800 rounded-lg hover:bg-stone-600 transition duration-300 ease-in-out"
                 icon={<FaLinkedin color="rgb(132 204 22)" />}
               />

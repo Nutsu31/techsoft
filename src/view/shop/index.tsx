@@ -10,7 +10,8 @@ const Shop = () => {
 
       <FaShop
         color="rgb(132 204 22)"
-        size={350}
+        size={320}
+        className="w-full"
         style={{
           position: "absolute",
           top: "50%",

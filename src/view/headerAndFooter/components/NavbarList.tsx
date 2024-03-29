@@ -4,11 +4,12 @@ import { Link } from "react-router-dom";
 const NavbarList = ({ className }: Partial<{ className: string }>) => {
   const list = useMemo(() => {
     return [
-      { label: "Home", link: "" },
-      { label: "Services", link: "" },
-      { label: "Works", link: "" },
-      { label: "About", link: "" },
-      { label: "Careers", link: "" },
+      { label: "Home", link: "/" },
+      { label: "Services", link: "/services" },
+      { label: "Shop", link: "/shop" },
+      { label: "Works", link: "/works" },
+      { label: "About", link: "/about-us" },
+      { label: "Careers", link: "/careers" },
     ];
   }, []);
 
