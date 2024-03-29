@@ -9,22 +9,51 @@ const appsRoute = [
     Component: React.lazy(() => import("../../view/landing/index")),
     authority: [ADMIN, USER],
   },
+  {
+    key: "appsPage.services",
+    path: `${APP_PREFIX_PATH}/`,
+    Component: React.lazy(() => import("../../view/services")),
+    authority: [ADMIN, USER],
+  },
+  {
+    key: "appsPage.works",
+    path: `${APP_PREFIX_PATH}/`,
+    Component: React.lazy(() => import("../../view/works")),
+    authority: [ADMIN, USER],
+  },
+  {
+    key: "appsPage.shop",
+    path: `${APP_PREFIX_PATH}/`,
+    Component: React.lazy(() => import("../../view/shop")),
+    authority: [ADMIN, USER],
+  },
+  {
+    key: "appsPage.partner",
+    path: `${APP_PREFIX_PATH}/`,
+    Component: React.lazy(() => import("../../view/partners")),
+    authority: [ADMIN, USER],
+  },
+  {
+    key: "appsPage.about",
+    path: `${APP_PREFIX_PATH}/`,
+    Component: React.lazy(() => import("../../view/aboutUs")),
+    authority: [ADMIN, USER],
+  },
 
-  //   {
-  //     key: "appsProject.projectList",
-  //     path: `${APP_PREFIX_PATH}/project/project-list`,
-  //     component: React.lazy(() => import("views/project/ProjectList")),
-  //     authority: [ADMIN, USER],
-  //   },
-  //   {
-  //     key: "appsProject.scrumBoard",
-  //     path: `${APP_PREFIX_PATH}/project/scrum-board`,
-  //     component: React.lazy(() => import("views/project/ScrumBoard")),
-  //     authority: [ADMIN, USER],
-  //     meta: {
-  //       pageContainerType: "gutterless",
-  //     },
-  //   },
+  {
+    key: "appsPage.career",
+    path: `${APP_PREFIX_PATH}/`,
+    Component: React.lazy(() => import("../../view/careers")),
+    authority: [ADMIN, USER],
+  },
+  {
+    key: "appsPage.contact",
+    path: `${APP_PREFIX_PATH}/`,
+    Component: React.lazy(() => import("../../view/contacts")),
+    authority: [ADMIN, USER],
+  },
+
+  //
 ];
 
 export default appsRoute;

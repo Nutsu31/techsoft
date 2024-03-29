@@ -48,11 +48,11 @@ const Footer = () => {
         </div>
         <div className="flex items-center gap-2 ">
           <MdPhone size={20} color="rgb(132 204 22)" />
-          <p className="text-white">+91 91813 23 2309</p>
+          <p className="text-white">+995 598 79 47 87</p>
         </div>
         <div className="flex items-center gap-2 ">
           <MdLocationPin size={20} color="rgb(132 204 22)" />
-          <p className="text-white">Somewhere in the World</p>
+          <p className="text-white">Tbilisi, Georgia</p>
         </div>
       </div>
     </>

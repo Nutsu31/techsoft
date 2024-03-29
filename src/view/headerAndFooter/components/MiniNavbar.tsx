@@ -1,7 +1,6 @@
-import React, { useMemo } from "react";
+import { useMemo } from "react";
 import { FaHome, FaServicestack } from "react-icons/fa";
 import { FaShop, FaUser } from "react-icons/fa6";
-import { FcAbout } from "react-icons/fc";
 import { MdWork } from "react-icons/md";
 import { SiAboutdotme } from "react-icons/si";
 import { Link } from "react-router-dom";
