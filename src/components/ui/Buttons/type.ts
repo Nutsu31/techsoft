@@ -12,6 +12,7 @@ export type ButtonPropTypes = {
   variant: string;
   disabled: boolean;
   loading: boolean;
+  onClick: () => void;
 };
 
 export type ButtonColorTypes = {

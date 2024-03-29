@@ -16,7 +16,9 @@ const NavbarList = ({ className }: Partial<{ className: string }>) => {
     <ul className={"flex items-center justify-center gap-4 " + className}>
       {list.map((item, i) => (
         <Link to={item.link} key={Math.random() * i}>
-          <li className="text-white ">{item.label}</li>
+          <li className=" text-white p-2  rounded-lg hover:bg-lime-500 transition duration-300 ease-in-out">
+            {item.label}
+          </li>
         </Link>
       ))}
     </ul>

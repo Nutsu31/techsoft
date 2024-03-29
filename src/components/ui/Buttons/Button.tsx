@@ -10,6 +10,7 @@ const Button = React.forwardRef(
       className,
       children,
       icon,
+      onClick,
       size,
       block,
       variant,
@@ -154,7 +155,7 @@ const Button = React.forwardRef(
     );
 
     return (
-      <button className={classes}>
+      <button className={classes} onClick={onClick}>
         {icon} {children}
       </button>
     );
