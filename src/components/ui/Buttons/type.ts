@@ -1,7 +1,7 @@
 import { ReactElement } from "react";
 
 export type ButtonPropTypes = {
-  children: ReactElement;
+  children: ReactElement | string;
   className: string;
   size: string;
   icon: ReactElement;

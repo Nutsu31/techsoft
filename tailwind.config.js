@@ -59,6 +59,9 @@ export default {
       "2xl": "1536px",
     },
     extend: {
+      backgroundImage: {
+        "hero-pattern": "url('./src/assets/hero.png')",
+      },
       typography: (theme) => ({
         DEFAULT: {
           css: {

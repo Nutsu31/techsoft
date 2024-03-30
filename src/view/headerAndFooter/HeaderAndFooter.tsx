@@ -4,13 +4,13 @@ import { Outlet } from "react-router-dom";
 
 const HeaderAndFooter = () => {
   return (
-    <div className="h-screen max-w-[1600px] mx-auto my-0  h-12">
-      <Header />
-      <div className="h-screen">
+    <>
+      <div className="min-h-screen max-w-[1600px] mx-auto my-0  h-12">
+        <Header />
         <Outlet />
+        <Footer />
       </div>
-      <Footer />
-    </div>
+    </>
   );
 };
 
