@@ -4,19 +4,29 @@ import Button from "../../../components/ui/Buttons";
 import Logo from "../../../components/ui/Logo";
 import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa6";
 import { MdEmail, MdLocationPin, MdPhone } from "react-icons/md";
+import { useState } from "react";
 
 const Footer = () => {
   const handleOpenSocialNetwork = (link: string) => {
     window.open(link);
   };
+  const [activeRoute, setActiveRoute] = useState("/");
+
+  const handleActiveRoute = (route: string) => {
+    setActiveRoute(route);
+  };
   return (
     <>
-      <div className="pb-4 lg:flex items-center justify-between">
+      <div className="pb-4 lg:flex items-center justify-between border-t pt-8 border-stone-800">
         <div className="p-4 border-b border-stone-800">
           <Logo className="flex flex-col lg:flex-row" />
         </div>
-        <div className="h-16 flex items-center justify-center">
-          <NavbarList className="flex-warp" />
+        <div className="h-16 flex items-center justify-center my-8">
+          <NavbarList
+            className="flex-warp"
+            active={activeRoute}
+            handleActive={handleActiveRoute}
+          />
         </div>
         <div>
           <Card className="flex flex-col items-center justify-center gap-2 p-2 border-stone-800 lg:flex-row gap-4">

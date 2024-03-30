@@ -6,31 +6,32 @@ const appsRoute = [
   {
     key: "appsPage.landing",
     path: `${APP_PREFIX_PATH}/`,
-    Component: React.lazy(() => import("../../view/landing/index")),
+    index: true,
+    element: React.lazy(() => import("../../view/landing/index")),
     authority: [ADMIN, USER],
   },
   {
     key: "appsPage.services",
     path: `${APP_PREFIX_PATH}/`,
-    Component: React.lazy(() => import("../../view/services")),
+    element: React.lazy(() => import("../../view/services")),
     authority: [ADMIN, USER],
   },
   {
     key: "appsPage.works",
     path: `${APP_PREFIX_PATH}/`,
-    Component: React.lazy(() => import("../../view/works")),
+    element: React.lazy(() => import("../../view/works")),
     authority: [ADMIN, USER],
   },
   {
     key: "appsPage.shop",
     path: `${APP_PREFIX_PATH}/`,
-    Component: React.lazy(() => import("../../view/shop")),
+    element: React.lazy(() => import("../../view/shop")),
     authority: [ADMIN, USER],
   },
   {
     key: "appsPage.partner",
     path: `${APP_PREFIX_PATH}/`,
-    Component: React.lazy(() => import("../../view/partners")),
+    element: React.lazy(() => import("../../view/partners")),
     authority: [ADMIN, USER],
   },
   {
