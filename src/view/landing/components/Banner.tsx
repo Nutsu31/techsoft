@@ -13,8 +13,8 @@ const workingFor = [
 const Banner = ({ img, title }) => {
   return (
     <div className="relative h-screen bg-[url('./src/assets/hero.png')] bg-cover bg-no-repeat bg-center lg:h-3/4 ">
-      <div className="w-full flex flex-col items-center justify-evenly md:flex-row md:items-center md:justify-evenly p-12">
-        <div className="lg:w-4/12">
+      <div className="w-full h-full flex flex-col p-4 gap-4 items-center justify-center px-12 lg:flex-row py-12 justify-evenly">
+        <div className="w-full  md:w-3/4 lg:w-4/12">
           <h1 className="text-white font-bold text-3xl p-2">{title}</h1>
           <Card className="border-stone-700 p-4">
             <p className="text-white flex items-center gap-2 flex-wrap">
@@ -35,11 +35,9 @@ const Banner = ({ img, title }) => {
             </Button>
           </div>
         </div>
-        <img
-          src={Gif}
-          alt=""
-          className="hidden p-2 lg:w-4/12 rounded lg:block"
-        />
+        <div className="hidden p-2 rounded sm:flex w-2/4 md:w-3/4 lg:w-6/12  xl:w-6/12">
+          <img src={Gif} alt="" className="w-full" />
+        </div>
       </div>
     </div>
   );
