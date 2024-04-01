@@ -9,8 +9,9 @@ const workingFor = [
   "CMS Panels, ",
   "Etc.",
 ];
-
-const Banner = ({ img, title }) => {
+const title = `TechSOFT as a Software Development Company
+that will Work`;
+const Banner = () => {
   return (
     <div className="relative h-screen bg-[url('./src/assets/hero.png')] bg-cover bg-no-repeat bg-center lg:h-3/4 ">
       <div className="w-full h-full flex flex-col p-4 gap-4 items-center justify-center px-12 lg:flex-row py-12 justify-evenly">

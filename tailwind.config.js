@@ -59,6 +59,9 @@ export default {
       "2xl": "1536px",
     },
     extend: {
+      zIndex: {
+        "-10": "-100",
+      },
       backgroundImage: {
         "hero-pattern": "url('./src/assets/hero.png')",
       },
