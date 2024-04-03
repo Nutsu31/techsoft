@@ -1,17 +1,26 @@
-import React from "react";
-import { CgIfDesign } from "react-icons/cg";
-import { FaPuzzlePiece } from "react-icons/fa";
-import { FaDiagramProject } from "react-icons/fa6";
+import { ReactElement } from "react";
 import Button from "../ui/Buttons";
 
+type PropsType = {
+  title: string;
+  subTitle: string;
+  rows: number;
+  columns: number;
+
+  cardProps: {
+    icon: ReactElement;
+    title: string;
+    sub: string;
+  }[];
+};
+
 const LongBanner = ({
-  img,
   title,
+  rows,
+  columns,
   subTitle,
   cardProps = [],
-}: {
-  img: string;
-}) => {
+}: PropsType) => {
   return (
     <>
       <div className="relative h-56 p-4 flex flex-col items-center justify-center gap-4">
@@ -20,12 +29,13 @@ const LongBanner = ({
         <p className="text-white ">{subTitle}</p>
       </div>
       <div
-        className={`border border-stone-800 grid grid-cols-1 justify-between gap-4 w-full p-8 md:grid-cols-2 lg:grid-cols-3 grid-rows-${
-          cardProps.length / 2
-        }`}
+        className={`border border-stone-800 grid grid-cols-1 justify-between gap-4 w-full p-8 md:grid-cols-2 lg:grid-cols-${columns} grid-rows-${rows}`}
       >
         {cardProps.map((item) => (
-          <div className="self-end flex flex-col gap-8 w-full mt-4 pb-4">
+          <div
+            key={Math.random() * Math.random()}
+            className="self-end flex flex-col gap-8 w-full mt-4 pb-4"
+          >
             <div className="w-16 h-16 bg-stone-800 rounded flex items-center justify-center ">
               {item.icon}
             </div>
